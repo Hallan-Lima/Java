@@ -7,6 +7,8 @@ package primeiroprograma;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import static java.lang.System.gc;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -33,23 +35,24 @@ public class PrimeiroPrograma {
         
         /** Segunda aula
         *
-        * Exibir a data atual do sistema operacional
-        *Date relogio = new Date();
-        *System.out.print("A hora do sistema é: ");
-        *System.out.println(relogio);
-        *
-        *
-        * Exibir a resolução do sistema operacional
-        *Toolkit tk = Toolkit.getDefaultToolkit();
-        *Dimension d = tk.getScreenSize();
-        *System.out.print("Resolucao em = " + d.width);
-        *System.out.println(" X " + d.height);
-        *
-        *
-        * Exibir a linguagem do sistema operacional
-        *Locale loc = Locale.getDefault();
-        *System.out.print ("Seu sistema operacional esta em = " + loc.getDisplayLanguage()); // imprime "Português"
-        *System.out.println ("-" + loc.getLanguage()); // imprime "pt"
+        *Exibir a data atual do sistema operacional *
+        Date relogio = new Date();
+        System.out.print("A hora do sistema é: ");
+        System.out.println(relogio);
+        
+        
+        ** Exibir a resolução do sistema operacional *
+        Toolkit tk = Toolkit.getDefaultToolkit();
+        Dimension d = tk.getScreenSize();
+        System.out.print("Resolucao em = " + d.width);
+        System.out.println(" X " + d.height);
+        
+        
+        ** Exibir a linguagem do sistema operacional *
+        Locale loc = Locale.getDefault();
+        System.out.print ("Seu sistema operacional esta em = " + loc.getDisplayLanguage()); // imprime "Português"
+        System.out.println ("-" + loc.getLanguage()); // imprime "pt"
+        
         */
         
         //--//
@@ -176,15 +179,36 @@ public class PrimeiroPrograma {
         */
         
         /* comando para pegar o ano atual
-        *Calendar cal = GregorianCalendar.getInstance();
-        *System.out.println(cal.get(Calendar.YEAR));
+        Calendar cal = GregorianCalendar.getInstance();
+        System.out.println(cal.get(Calendar.YEAR));
         */
         
         //--//
+        /* Oitava aula */
+     
+        /*testando case e while
+        int cc = 1;
+        int c = 0;
         
-   
         
-    }
-}
+        do{
+            cc++;
+            c++;
+            System.out.println("tes");
+            
+           switch(c){
+                case 1:
+                    System.out.println("quest1");
+                    break;
+            
+            
+            };
+        }while (cc<5);
+          
+        System.out.println("morreu");
+        */
 
+
+
+}}
 
